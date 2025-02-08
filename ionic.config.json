@@ -1,0 +1,7 @@
+{
+  "name": "ShotSpot",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
