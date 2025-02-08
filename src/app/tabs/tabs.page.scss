@@ -1,1 +1,24 @@
+/* Transparent background for ion-tabs */
+ion-tabs {
+  position: relative;
+  z-index: 0; /* Keep it beneath the button */
+  --background: transparent; /* Makes ion-tabs background transparent */
+}
 
+/* Styling for ion-tab-bar */
+ion-tab-bar {
+  position: relative;
+  z-index: 1; /* Ensure it stays above ion-tabs */
+  border-radius: 50px;
+  width: 94%;
+  background-color: rgb(100 149 237 / 9%);
+  margin: 5% 3% 2%;
+  border: 1px solid rgba(128, 128, 128, 0.18); /* Adjust opacity */
+  box-shadow: rgb(255 25 161 / 25%) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+/* Tab selected style */
+ion-tab-bar ion-tab-button.tab-selected {
+  background-color: rgb(100 149 237 / 9%) !important; /* Highlight selected tab */
+  --color: white; /* Change text/icon color for selected tab */
+}

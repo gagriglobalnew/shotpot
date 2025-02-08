@@ -1,0 +1,131 @@
+/*.logo{
+  width:35%;
+}
+.country-code {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.logincard {
+  border: 1px solid #ddd;
+ // box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: none;
+}
+button {
+  background-color: #e44e75;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  padding: 1px;
+  height: 35px;
+  border-radius: 50px;
+}
+/*ion-content {
+  --background: rgb(2,0,36) !important;
+  --background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,19,99,1) 35%, rgba(245,83,118,1) 100%) !important;
+}*/
+/*ion-content {
+  --background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(49,19,99,1) 50%, rgba(245,83,118,1) 100%) !important;
+}
+.titlee {
+  font-size: 26px;
+  font-family: fangsong;
+}
+.white {
+  color: var(--whitecolor);
+}
+.main {
+  color: #f55476;
+ // color: var(--maincolor2);
+}
+ion-footer {
+  box-shadow: none !important;
+  --box-shadow: none !important;
+  --ion-box-shadow: none !important;
+}*/
+
+
+.logo {
+  width: 35%;
+}
+
+.country-code {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  padding-left: 10px;
+}
+
+.logincard {
+  border: 1px solid #ddd;
+  // box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: none;
+}
+
+button {
+  background-color: #e44e75;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+  padding: 1px;
+  height: 35px;
+  border-radius: 50px;
+  z-index: 100000 !important;
+}
+/*ion-content {
+  --background: rgb(2,0,36) !important;
+  --background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(49,19,99,1) 35%, rgba(245,83,118,1) 100%) !important;
+}*/
+ion-content {
+  --background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(49,19,99,1) 50%, rgba(245,83,118,1) 100%) !important;
+}
+
+.titlee {
+  font-size: 26px;
+  font-family: fangsong;
+}
+
+.white {
+  color: var(--whitecolor);
+}
+
+.main {
+  color: #f55476;
+  // color: var(--maincolor2);
+}
+
+ion-footer {
+  //position:fixed;
+  z-index: 100000 !important;
+  margin-top: 6%;
+  box-shadow: none !important;
+  --box-shadow: none !important;
+  --ion-box-shadow: none !important;
+}
+
+.signup {
+  margin-top: 6%;
+  /*background-color: #e44e75;*/
+  color: white;
+  font-size: 16px;
+  /*width: 45%;*/
+  padding: 1px;
+  height: 35px;
+  border-radius: 50px;
+  float: inline-end;
+  text-decoration-line: underline;
+}
+
+.img-fluid {
+  width: 100%;
+}
+
+ion-footer {
+  --background: linear-gradient(180deg, rgb(209 71 115) 0%, rgb(228 78 117) 50%, rgba(245, 83, 118, 1) 100%) !important;
+}

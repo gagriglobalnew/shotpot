@@ -35,3 +35,108 @@
 /* @import "@ionic/angular/css/palettes/dark.always.css"; */
 /* @import "@ionic/angular/css/palettes/dark.class.css"; */
 @import "@ionic/angular/css/palettes/dark.system.css";
+/* swiper import*/
+/* styles.scss */
+/* In your global.scss */
+/*@import 'node_modules/swiper/swiper-bundle.min.css';*/
+:root {
+  --ion-font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+/* Light Theme (default theme) */
+:root {
+  --maincolor: #f55476;
+  --maincolor2: #311463;
+  --whitecolor: #ffffff;
+  --blackcolor: #000000;
+  --textcolor: #C7B689;
+  --textcolorr: #bf9015;
+  --cardcolor1: #DAF3ED;
+  --textcolor1: #437D62;
+  --cardcolor2: #DBEEF4;
+  --cardcolor3: #EFF4D7;
+  --textcolor3: #7DADAF;
+  --cardcolor4: #F1EDFC;
+  --textcolor4: #A292CE;
+}
+
+/* Dark Theme */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --maincolor: #f55476;
+    --maincolor2: #311463;
+    --whitecolor: #ffffff;
+  }
+}
+
+/* Manually Toggling the Dark Theme */
+body.dark-theme {
+  --ion-background-color: #121212;
+  --ion-text-color: #ffffff;
+  --ion-toolbar-background: #1f1f1f;
+  --ion-toolbar-color: #ffffff;
+  --ion-item-background: #2a2a2a;
+  --ion-item-hover-background: #3c3c3c;
+  --ion-card-background: #2c2c2c;
+  --ion-card-header-background: #333333;
+  --ion-card-content-color: #cccccc;
+  --ion-button-background: #6200ee;
+  --ion-button-text-color: #ffffff;
+}
+.maincolor{
+  color:var(--maincolor);
+}
+
+body,div,p,small,strong,.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 ion-title{
+  font-family:var(--ion-font-family);
+}
+
+.custom-modal .modal-wrapper {
+  max-height: 40% !important;
+  --height: 40%;
+}
+
+.custom-modal .box {
+  height: auto;
+  overflow-y: auto;
+  padding: 5%;
+}
+
+.custom-modal .modal-wrapper {
+  --width: 100%;
+  --height: 100%;
+  --border-radius: 1rem 1rem 0 0;  
+  --background: white;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+}
+
+/*.scroll-content {
+  height: 100%;
+  overflow-y: auto;
+  padding: 5%;
+}*/
+
+ion-modal ion-toolbar:first-of-type {
+  padding-top: var(--ion-safe-area-top, 0);
+  --background: var(--whitecolor);
+  --color: white;
+  box-shadow: none;
+  margin-bottom: -5%;
+  border-radius: 25px 25px 0px 0px;
+}
+
+ion-modal::part(content) {
+  border-top-left-radius: 27px;
+  border-top-right-radius: 27px;
+  overflow: hidden;
+  border-color: #3b2b98;
+}
+
+ion-model ion-item {
+  margin-top: 1rem !important;
+}

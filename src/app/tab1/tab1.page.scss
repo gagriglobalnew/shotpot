@@ -1,0 +1,261 @@
+ion-card-title
+{
+  font-size:13px;
+}
+.logoo {
+  width: 35%;
+  height: auto;
+}
+.logo {
+  padding-left: 1rem;
+}
+ion-card {
+  padding: 7px;
+  /*height: 95px;*/
+}
+.full-width-video {
+  padding:2%;
+  width: 100%;
+  height: auto; /* Optional, adjusts height to maintain aspect ratio */
+}
+ion-searchbar{
+  --border-radius:20px;
+}
+ 
+ion-searchbar {
+  --padding-end: 50px; /* Adjust padding to create space for the icon */
+}
+
+ion-icon {
+  font-size: 24px; /* Adjust icon size */
+  color: #888; /* Customize icon color */
+}
+.horizontal-scroll {
+  display: flex;
+  overflow-x: auto;
+  padding-bottom: 10px; /* Optional: adds space at the bottom */
+}
+
+.horizontal-scroll ion-col {
+  flex: 0 0 auto; /* Prevent columns from resizing */
+  margin-right: 10px; /* Optional: adds space between columns */
+}
+  
+/*.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}*/
+.scroll-container {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+.column {
+  flex-shrink: 0;
+  width: 82px;
+  height: 82px;
+  margin-right: 5px;
+  text-align: center;
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+.column ion-card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.column img{
+  border-radius:5px;
+}
+.column1 {
+  flex-shrink: 0;
+  width: 75%;
+  height: 110px;
+  margin-right: 5px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+.column2 {
+  flex-shrink: 0;
+  width: 45%;
+  height: 150px;
+  margin-right: -2px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+}
+.column3 {
+  flex-shrink: 0;
+  width: 90px;
+  height: 115px;
+  margin-right: -2px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.column4 {
+  flex-shrink: 0;
+  width: 50%; /* Each card takes 50% of the container width */
+  margin-right: -2px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.column4 video {
+  width: 100%; /* Full width of the column */
+  height: 200px; /* Fixed height */
+  object-fit: cover; /* Ensures the video fills the dimensions without distortion */
+}
+
+.image-text {
+  margin-top: 10px;
+  
+  color: #333;
+}
+
+.modal-content {
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --padding-start: 0;
+  --padding-end: 0;
+}
+
+.bg1 {
+  --background: #000;
+  --color: #C7B689;
+  font-weight: bold;
+}
+
+.bg2 {
+  --background: #DAF3ED;
+  --color: #437D62;
+  font-weight: bold;
+}
+
+.bg3 {
+  background: var(--cardcolor4);
+  --color: #000;
+  font-weight: bold;
+}
+.backgroundblack {
+  background-color: var(--blackcolor);
+}
+.fs {
+  font-size: 12px;
+  width: 80%;  
+  white-space: nowrap; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+  display: block;  
+}
+.center-column {
+  display: flex;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment (if needed) */
+  height: 100%; /* Ensures the column takes full height */
+}
+.textcolorr {
+  color: var(--textcolorr);
+}
+.custom-item-height {
+  --min-height: 20px;
+  /*height: 100px;*/
+}
+.width50 {
+  width: 50%;
+}
+button {
+  background-color: rgb(213 213 213 / 68%);
+  border-radius: 50px;
+  width: 50%;
+  color: white;
+  padding: 5px 10px;
+  margin-top: 0.5rem;
+}
+ 
+ion-card {
+  border-radius:10px;
+}
+ video {
+  border-radius: 15px;
+}
+.box-shadow {
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.maincolor2{
+  color:var(--maincolor2);
+}
+.circle-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #ff6f61;
+  object-fit: fill;
+  padding: 2px;
+}
+.image-text1 {
+  margin-top: 10px;
+  font-size: 11px;
+  color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-left: 10px;
+}
+iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 7px;
+}
+.divv {
+  padding: 10px;
+}
+.modell_card {
+  margin: 5px;
+}
+.modell_card  div{
+  font-size:11px;
+}
+ion-content {
+  /*--background: #fba0b81a !important;*/
+  /*--background: #fba0b824 !important;*/
+  --background: #bae0ff3b  ;
+}
+ion-toolbar {
+  --background: #301965; /* Replace with your desired color */
+  --color: #ffffff; /* Optional: Sets the text color inside the toolbar */
+  
+}
+.titlee {
+  font-size: 26px;
+  font-family: fangsong;
+}
+.logotop {
+  margin-top: -12px;
+}
+ion-modal .modal-content {
+  --background: white; /* Sets the background color for ion-content inside the modal */
+  color: #000; /* Optional: Sets the text color */
+}

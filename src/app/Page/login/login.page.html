@@ -1,0 +1,98 @@
+
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <form [formGroup]="LoginForm">
+
+    <ion-row>
+
+      <ion-col size="12">
+
+        <div class="logoo titlee ">
+
+          <span style="color:white">Shot</span><span style="color:#f55476">spot</span>
+
+          <!--<img src="assets/images/logoshotspot.png" />-->
+        </div>
+
+        <!--<img src="../../../assets/images/logoshotspot.png" class="logo" />-->
+        <br />
+        <img src="assets/images/loginimg.jpg" class="img-fluid ion-no-margin" />
+       
+      </ion-col>
+          <h6 class="white">Impactful, Persuasive, Social, Trendsetters, Engaging</h6>
+          <ion-col size="12">
+
+            <br />
+            <ion-card class="logincard ion-no-margin">
+              <ion-grid style="padding: 1px;height:35px;">
+                <ion-row class="ion-align-items-center">
+                  <ion-col size="2" class="country-code" style="margin-top:-30px">
+                    <span>+91</span>
+                  </ion-col>
+                  <ion-col size="10">
+                    <ion-item lines="none">
+                      <ion-input type="tel" placeholder="Enter Mobile" [maxlength]="10" style="margin-top:-28px;border: none;" formControlName="Mobile" class="input_field">
+                      </ion-input>
+                      <!--<ion-input placeholder="Phone number" type="tel" maxlength="10" style="margin-top:-26px"></ion-input>-->
+                    </ion-item>
+
+                    <div *ngIf="LoginForm.get('Mobile')?.invalid && (LoginForm.get('Mobile')?.dirty || LoginForm.get('Mobile')?.touched)">
+                      <small *ngIf="LoginForm.get('Mobile')?.hasError('required')" class="error-message">
+                        Mobile is required
+                      </small>
+                      <small *ngIf="LoginForm.get('Mobile')?.hasError('pattern')" class="error-message">
+                        Invalid mobile number
+                      </small>
+                      <small *ngIf="LoginForm.get('Mobile')?.hasError('maxlength')" class="error-message">
+                        Mobile number should not exceed 10 digits
+                      </small>
+                    </div>
+
+
+                    <!--<div *ngIf="LoginForm.get('Password')?.invalid || LoginForm.get('Password')?.dirty || LoginForm.get('Password')?.touched">
+            <small *ngIf="!LoginForm.get('Password') || LoginForm.get('Password') === ''" class="error-message">
+              Password number is required.
+            </small>
+
+          </div>-->
+                  </ion-col>
+
+                </ion-row>
+
+              </ion-grid>
+            </ion-card>
+            <br />
+            <ion-card class="logincard ion-no-margin">
+              <ion-grid style="padding: 1px;height:35px;">
+
+                <ion-row>
+                  <ion-col size="12">
+                    <ion-item>
+                      <ion-input type="text" placeholder="Enter password" [maxlength]="16" style="margin-top:-28px;border: none;" formControlName="Password" class="input_field">                  </ion-input>
+                      <!--<ion-input placeholder="Phone number" type="tel" maxlength="10" style="margin-top:-26px"></ion-input>-->
+                    </ion-item>
+
+                  </ion-col>
+
+                </ion-row>
+              </ion-grid>
+            </ion-card>
+            <br />
+            <button style="margin-top:30%;" (click)="click(LoginForm.value)">Submit</button>
+            <p class="signup" (click)="signup()">SignUp...?</p>
+          </ion-col>
+
+    </ion-row>
+    </form>
+
+</ion-content>
+<ion-footer style="margin-left:50px">
+  <ion-row class="ion-padding">
+    <h6 class="white">
+      By continuing, you agree to our <br /><a class="white" (click)="btn('t')">Terms of Use </a>
+      <span>&</span>
+      <span (click)="btn('p')"> Privacy Policy</span>
+    </h6>
+  </ion-row>
+  
+</ion-footer>
